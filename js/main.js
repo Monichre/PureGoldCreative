@@ -1,17 +1,21 @@
 
-// $(window).scroll(function(){
-//   var scroll = $(window).scrollTop();
-//   var scrollEffect = $('#scroll-effect');
-//   var nonScrollEffect = $('#non-scroll');
+$(window).scroll(function(){
+  var scroll = $(window).scrollTop();
+  var scrollEffect = $('#scroll-effect');
+  var nonScrollEffect = $('#non-scroll');
   
-//   if (scroll >= 30) {
-    
-//     $(nonScrollEffect).slideUp();
-//     $(scrollEffect).slideDown(1000);
+  if (scroll >= 30) {
 
-//   }
+    $(nonScrollEffect).slideUp(500);
+    $(scrollEffect).slideDown(1000);
+
+  }
+
+  $('.dropdown').hover(function(){
+    $('.dropdown-content').slideDown(1000);
+  })
   
 
-//   // if(scroll >= 20) stickyLogo.addClass('scroll-effect');
-// });
+  
+});
 
